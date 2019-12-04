@@ -36,17 +36,28 @@
                 android:layout_marginTop="10dp"
                 />
 
-            <com.google.android.youtube.player.YouTubePlayer
-                >
-
-            </com.google.android.youtube.player.YouTubePlayer>
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/youtuberPlayer">
+            </com.google.android.youtube.player.YouTubePlayerView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Badan Penyelenggaraaan Jaminan Sosial"/>
             <Button
                 android:textColor="@android:color/white"
                 android:background="@drawable/button_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="CARI TAHU LEBIH LANJUT" />
+                android:text="CARI TAHU LEBIH LANJUT"
+                android:layout_marginTop="10dp"
+                />
 
         </LinearLayout>
 
@@ -55,7 +66,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_bright"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
 
             <TextView
                 android:layout_width="match_parent"
@@ -107,11 +120,16 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/buttonMasuk"
+                    android:background="@drawable/button_back"
+                    android:id="@+id/buttonMasukTenaga"
+                    android:text="MASUK"
+                    android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -128,7 +146,7 @@
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
 
-                    android:text="Tenaga Kerja" />
+                    android:text="Perusahaan (Pemberi Kerja)" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -152,11 +170,14 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/buttonMasuk"
+                    android:id="@+id/buttonPerusahaan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_back"
+                    android:text="MASUK"
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
 
             <LinearLayout
@@ -173,7 +194,7 @@
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
 
-                    android:text="Tenaga Kerja" />
+                    android:text="Mitra" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -197,11 +218,14 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/buttonMasuk"
+                    android:id="@+id/buttonMitra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:text="MASUK"
+                    />
             </LinearLayout>
 
 
