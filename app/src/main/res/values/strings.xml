@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">BPJS</string>
+    <string name="badan_penyelenggaraan">
+        Badan Penyelenggaraan Jaminan Sosial (BPJS) Ketenagakerjaan
+        merupakan badan hukum publik yang bertugas melindungi keseluruhan pekerja melalui
+        4 program jaminan sosial ketenagakerjaan.
+    </string>
+    <string name="layanan_peserta">
+        BPJS Ketenagakerjaan memfasilitasi kebutuhan layanan kepesertaan bagi tenaga kerja
+        maupun perusahaan (pemberi kerja)
+    </string>
+    <string name="tenaga_kerja">
+        Layanan bagi tenaga kerja untuk cek Saldo, e-Klaim JHT,
+        cetak kartu dan Antrian Online
+    </string>
+    <string name="perusahaan">
+        Layanan bagi perusahaan (pemberi kerja) untuk membayar iuran dan mengelola
+        data tenaga kerja.
+    </string>
+    <string name="mitra">
+        Layanan bagi PLKK (Pusat Pelayanan Kecelakaan Kerja) untuk melayani klaim
+        JKK peserta
+    </string>
 </resources>

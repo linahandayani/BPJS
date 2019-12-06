@@ -3,7 +3,7 @@
     package="com.e.bpjs">
 <uses-permission android:name="android.permission.INTERNET"/>
 <!--    android sembilan ke atas, pie-->
-<!--    ingat noactionbar-->
+<!--    ingat noactionbar ketika toolbar-->
     <application
         android:usesCleartextTraffic="true"
         android:allowBackup="true"

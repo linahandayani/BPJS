@@ -15,6 +15,7 @@ class TenagaKerja : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tenaga_kerja)
+
         webView = findViewById(R.id.webView)
         pb = findViewById(R.id.pb)
         webView.settings.javaScriptEnabled = true

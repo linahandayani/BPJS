@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/appbar">
 
+        <!--untuk carouselView -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,7 +30,7 @@
                 app:slideInterval="3000"
                 app:strokeColor="#B86666"
                 app:strokeWidth="1dp" />
-
+            <!--Lanjut di sini-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,15 +42,20 @@
                     android:layout_marginTop="10dp"
                     android:text="Tentang Kami"
                     android:textAlignment="center"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="Badan Penyelenggaraaan Jaminan Sosial" />
+                    android:text="@string/badan_penyelenggaraan"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -68,6 +74,7 @@
                 android:text="CARI TAHU LEBIH LANJUT"
                 android:textColor="@android:color/white" />
 
+            <!--Layanan peserta-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,15 +87,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Layanan Peserta" />
+                    android:text="Layanan Peserta"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
                 <!--layout_gravity: berpengaruh kalau width nya wrap content-->
                 <!--       layaout terhadap dia sendiri     -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Deskripsi" />
+                    android:text="@string/layanan_peserta"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
 
+                <!--                Tenaga kerja-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -101,29 +113,31 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:gravity="center"
-
-                        android:text="Tenaga Kerja" />
-
+                        android:text="Tenaga Kerja"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <!--untuk imageview dan textview Tenaga -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-
+                        <!--image satu tenaga kerja-->
                         <ImageView
                             android:id="@+id/imagesatu"
-                            android:layout_width="100dp"
+                            android:layout_width="300dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-
-                            android:scaleType="center" />
+                            android:scaleType="fitXY" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
                             android:layout_weight="1"
-                            android:text="Keterangan lagi lo" />
+                            android:text="@string/tenaga_kerja"
+                            android:textSize="12dp" />
                     </LinearLayout>
 
                     <Button
@@ -134,11 +148,11 @@
                         android:layout_marginTop="10dp"
                         android:background="@drawable/button_back"
                         android:text="MASUK"
-                        android:textColor="@android:color/white"
-
-                        />
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
+                <!--           end tenaga kerja     -->
 
+                <!--        Perusahaan (Pemberian Kerja)        -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -152,8 +166,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:gravity="center"
-
-                        android:text="Perusahaan (Pemberi Kerja)" />
+                        android:text="Perusahaan (Pemberi Kerja)"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -162,19 +177,20 @@
 
                         <ImageView
                             android:id="@+id/imagedua"
-                            android:layout_width="100dp"
+                            android:layout_width="300dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
 
-                            android:scaleType="center" />
+                            android:scaleType="fitXY" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Keterangan lagi lo" />
+                            android:text="@string/perusahaan"
+                            android:textSize="12dp" />
                     </LinearLayout>
 
                     <Button
@@ -187,7 +203,9 @@
                         android:text="MASUK"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
+                <!--end perusahaan-->
 
+                <!--               Mitra-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -201,8 +219,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:gravity="center"
-
-                        android:text="Mitra" />
+                        android:text="Mitra"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -211,18 +230,19 @@
 
                         <ImageView
                             android:id="@+id/imagetiga"
-                            android:layout_width="100dp"
+                            android:layout_width="300dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            android:scaleType="center" />
+                            android:scaleType="fitXY" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Keterangan lagi lo" />
+                            android:text="@string/mitra"
+                            android:textSize="12dp" />
                     </LinearLayout>
 
                     <Button
@@ -231,12 +251,11 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:background="@android:color/white"
+                        android:background="@drawable/button_back"
                         android:text="MASUK" />
                 </LinearLayout>
-
-
             </LinearLayout>
+            <!--            penutup carouselView vertical carouselView-->
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>

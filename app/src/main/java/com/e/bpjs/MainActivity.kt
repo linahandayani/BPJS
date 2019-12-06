@@ -10,7 +10,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val url = "https://www.youtube.com/embed/gS-TAO7DbwA"
+    //buat konstanta
 
+    //    carouselView
     val sampleImages = intArrayOf(
         R.drawable.satu,
         R.drawable.dua,
@@ -26,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         carouselView.setImageListener { position, imageView ->
             Glide.with(this@MainActivity).load(sampleImages[position]).into(imageView)
         }
+
         buttonCariTahu.setOnClickListener {
             var i: Intent
             i = Intent(this@MainActivity, TenagaKerja::class.java)
@@ -51,18 +54,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+
+//   mengload gambar
         Glide.with(this@MainActivity).load(R.drawable.icon_pu).into(imagesatu)
         Glide.with(this@MainActivity).load(R.drawable.icon_perusahaan).into(imagedua)
         Glide.with(this@MainActivity).load(R.drawable.icon_mitra).into(imagetiga)
 
 
-        // yusup
+        // youtube
         webViewYoutube.settings.javaScriptEnabled = true
         webViewYoutube.settings.loadsImagesAutomatically = true
         webViewYoutube.settings.javaScriptCanOpenWindowsAutomatically = true
         webViewYoutube.loadUrl(url)
 
-
+//membuka aplikasi aplikasi youtube
         webViewYoutube.setOnTouchListener { v, event ->
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
